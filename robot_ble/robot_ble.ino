@@ -1,3 +1,6 @@
+// Código feito por: Arthur Mehl - GitHub: https://github.com/artmehl
+// Pode copiar, termina esse projeto ai e seja feliz :)). Se quiser, pode dar um salve também.
+
 #include <SoftwareSerial.h>
 
 //Pinos HC-05
@@ -10,6 +13,7 @@
 #define IN3 6
 #define IN4 7
 
+// Cria uma nova Serial via Software (utilizado pelo HC-05)
 SoftwareSerial ble (RX, TX);
 char carac;
 
@@ -24,7 +28,6 @@ void setup() {
   Serial.begin(9600);
   ble.begin(9600);
   delay(100);
-  ble.println("SETUP");
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
