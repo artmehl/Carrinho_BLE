@@ -60,6 +60,17 @@ void loop() {
 
     case 'E':
       digitalWrite(LED, HIGH);
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, HIGH);
+      delay(500);
+      desligaMotores();
+      digitalWrite(LED, LOW);
+      break;
+      
+    case 'D':
+      digitalWrite(LED, HIGH);
       digitalWrite(IN1, HIGH);
       digitalWrite(IN2, HIGH);
       digitalWrite(IN3, LOW);
@@ -69,16 +80,6 @@ void loop() {
       digitalWrite(LED, LOW);
       break;
 
-    case 'D':
-      digitalWrite(LED, HIGH);
-      digitalWrite(IN1, LOW);
-      digitalWrite(IN2, HIGH);
-      digitalWrite(IN3, HIGH);
-      digitalWrite(IN4, HIGH);
-      delay(500);
-      desligaMotores();
-      digitalWrite(LED, LOW);
-      break;
 
     case 'T':
       digitalWrite(LED, HIGH);
